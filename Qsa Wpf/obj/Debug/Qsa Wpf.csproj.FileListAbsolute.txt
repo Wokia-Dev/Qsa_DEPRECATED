@@ -1,0 +1,24 @@
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\bin\Debug\Qsa Wpf.exe.config
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\bin\Debug\Qsa Wpf.exe
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\bin\Debug\Qsa Wpf.pdb
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\Qsa Wpf.csproj.AssemblyReference.cache
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\MainWindow.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\App.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\Qsa Wpf_MarkupCompile.cache
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\Qsa Wpf_MarkupCompile.lref
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\MainWindow.baml
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\Qsa Wpf.g.resources
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\Qsa_Wpf.Properties.Resources.resources
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\Qsa Wpf.csproj.GenerateResource.cache
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\Qsa Wpf.csproj.CoreCompileInputs.cache
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\Qsa Wpf.exe
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\Qsa Wpf.pdb
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\Theme\MenuButtonTheme.baml
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\App.baml
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\MVVM\View\UserView.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\MVVM\View\UserView.baml
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\MVVM\View\BureautiqueView.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\MVVM\View\BureautiqueView.baml
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\MVVM\View\NavigateursView.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Debug\MVVM\View\NavigateursView.baml

@@ -1,0 +1,14 @@
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\bin\Release\Qsa Wpf.exe.config
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\bin\Release\Qsa Wpf.exe
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\bin\Release\Qsa Wpf.pdb
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\MainWindow.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\App.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf_MarkupCompile.cache
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf_MarkupCompile.lref
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\MainWindow.baml
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf.g.resources
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa_Wpf.Properties.Resources.resources
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf.csproj.GenerateResource.cache
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf.csproj.CoreCompileInputs.cache
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf.exe
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf.pdb

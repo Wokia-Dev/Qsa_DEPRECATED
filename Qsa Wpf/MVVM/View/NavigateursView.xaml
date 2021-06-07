@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="Qsa_Wpf.MVVM.View.NavigateursView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Qsa_Wpf.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="631" d:DesignWidth="878">
+    
+    <Grid Initialized="Grid_Initialized">
+        <!--Chrome-->
+        <StackPanel>
+            <Border Height="110" Margin="10,0,668,0" CornerRadius="10">
+
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#5bc3ff"/>
+                        <GradientStop Color="#3aa0ff"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+
+                <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                          Name="Chrome_CheckBox"
+                          DataContextChanged="Chrome_CheckBox_DataContextChanged">
+                    <CheckBox.LayoutTransform>
+                        <ScaleTransform ScaleX="2" ScaleY="2" />
+                    </CheckBox.LayoutTransform>
+
+                </CheckBox>
+            </Border>
+            <Image Source="/Images/Logo Logiciel/chrome.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="11,-130,0,0"/>
+            <TextBlock Text="Chrome" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="68,-27,700,0" HorizontalAlignment="Center"/>
+        </StackPanel>
+        
+    </Grid>
+</UserControl>
