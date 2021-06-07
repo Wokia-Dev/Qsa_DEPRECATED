@@ -5,13 +5,22 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Qsa_Wpf.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="631" d:DesignWidth="878">
+             d:DesignHeight="1000" d:DesignWidth="878"
+             >
+    
     <Grid Initialized="Grid_Initialized">
 
-
-        <!--Libre Office-->
+        <ScrollViewer CanContentScroll="True"
+                      HorizontalScrollBarVisibility="Auto"
+                      VerticalScrollBarVisibility="Auto">
         <StackPanel>
-            <Border Height="110" Margin="10,0,668,0" CornerRadius="10">
+        <!--Libre Office-->
+        <StackPanel Height="110"
+                    Width="200"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="10,0,0,0">
+            <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
 
                 <Border.Background>
                     <LinearGradientBrush>
@@ -30,12 +39,17 @@
                 </CheckBox>
             </Border>
             <Image Source="/Images/Logo Logiciel/libre office.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="11,-130,0,0"/>
-            <TextBlock Text="Libre Office" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="68,-27,700,0" HorizontalAlignment="Center"/>
+            <TextBlock Text="Libre Office" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="72,-27,46,0" HorizontalAlignment="Center"/>
         </StackPanel>
-
+        
         <!--Vlc-->
-        <StackPanel>
-            <Border Height="110" Margin="220,0,458,0" CornerRadius="10">
+        <StackPanel Height="110"
+                    Width="200"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="220,-110,0,0"
+                    >
+            <Border Height="110" CornerRadius="10">
 
                 <Border.Background>
                     <LinearGradientBrush>
@@ -54,13 +68,17 @@
                 </CheckBox>
 
             </Border>
-            <Image Source="/Images/Logo Logiciel/Vlc.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="220,-130,0,0"/>
-            <TextBlock Text="Vlc" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="276,-27,492,0" HorizontalAlignment="Center"/>
+            <Image Source="/Images/Logo Logiciel/Vlc.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="0,-130,0,0"/>
+            <TextBlock Text="Vlc" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
         </StackPanel>
 
         <!--WinRaR-->
-        <StackPanel>
-            <Border Height="110" Margin="430,0,248,0" CornerRadius="10">
+        <StackPanel Height="110"
+                    Width="200"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="430,-110,0,0">
+            <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
                 <Border.Background>
                     <LinearGradientBrush>
                         <GradientStop Color="#5bc3ff"/>
@@ -79,13 +97,17 @@
                 </CheckBox>
 
             </Border>
-            <TextBlock Text="WinRar" FontSize="15" FontFamily="/Fonts/#Poppins" HorizontalAlignment="Center" Margin="510,-27,301,0" Width="67" TextAlignment="Center"/>
-            <Image Source="/Images/Logo Logiciel/WinRar.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="434,-130,0,0"/>
+            <TextBlock Text="WinRar" FontSize="15" FontFamily="/Fonts/#Poppins" HorizontalAlignment="Center" Margin="20,-27,0,0" Width="67" TextAlignment="Center"/>
+            <Image Source="/Images/Logo Logiciel/WinRar.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="3,-130,0,0"/>
         </StackPanel>
 
         <!--Spotify-->
-        <StackPanel>
-            <Border Height="110" Margin="640,0,38,0" CornerRadius="10">
+        <StackPanel Height="110"
+                    Width="200"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="640,-110,0,0">
+            <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
                 <Border.Background>
                     <LinearGradientBrush>
                         <GradientStop Color="#5bc3ff"/>
@@ -102,10 +124,12 @@
 
                 </CheckBox>
             </Border>
-            <TextBlock Text="Spotify" FontSize="15" FontFamily="/Fonts/#Poppins" HorizontalAlignment="Center" Margin="715,-27,92,0" Width="71" TextAlignment="Center"/>
-            <Image Source="/Images/Logo Logiciel/Spotify.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="644,-130,0,0"/>
+            <TextBlock Text="Spotify" FontSize="15" FontFamily="/Fonts/#Poppins" HorizontalAlignment="Center" Margin="20,-27,0,0" Width="71" TextAlignment="Center"/>
+            <Image Source="/Images/Logo Logiciel/Spotify.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="3,-130,0,0"/>
+            
         </StackPanel>
 
-
+        </StackPanel>
+        </ScrollViewer>
     </Grid>
 </UserControl>

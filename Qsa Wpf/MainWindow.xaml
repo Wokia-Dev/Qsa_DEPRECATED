@@ -8,9 +8,8 @@
         mc:Ignorable="d"
         Title="QSA by Wokia" Height="720" Width="1104" Icon="/Images/W logo.png" 
         WindowStyle="ThreeDBorderWindow"
-        ResizeMode="CanMinimize"
+        ResizeMode="CanResizeWithGrip"
         Background="Transparent" Closing="Window_Closing"
-        
         >
 
     <Window.DataContext>
@@ -42,7 +41,16 @@
 
                 <RadioButton Content="Bureautique" Height="50" Foreground="White" FontSize="14" 
                              Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding BureautiqueViewCommand}"/>
+                             Command="{Binding BureautiqueViewCommand}" RenderTransformOrigin="0.5,0.5">
+                    <RadioButton.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleX="3.302"/>
+                            <RotateTransform/>
+                            <TranslateTransform X="1.442"/>
+                        </TransformGroup>
+                    </RadioButton.RenderTransform>
+                </RadioButton>
 
                 <RadioButton Content="Navigateurs" Height="50" Foreground="White" FontSize="14" 
                              Style="{StaticResource MenuButtonTheme}"
@@ -50,14 +58,9 @@
             </StackPanel>
 
             <ContentControl Grid.Row="1"
-                            Grid.Column="1"
-                            Margin="10"
-                            Content="{Binding CurrentView}"/>
-
-           
-
-
-
+                        Grid.Column="1"
+                        Margin="10"
+                        Content="{Binding CurrentView}"/>
         </Grid>
 
 

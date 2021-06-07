@@ -37,11 +37,24 @@ namespace Qsa_Wpf.MVVM.View
             }
         }
 
-
+        private void FireFox_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (FireFox_CheckBox.IsChecked == true)
+            {
+                UserView.Logiciel_Cks[5] = true;
+            }
+            else
+            {
+                UserView.Logiciel_Cks[5] = false;
+            }
+        }
 
         private void Grid_Initialized(object sender, EventArgs e)
         {
             Chrome_CheckBox.IsChecked = UserView.Logiciel_Cks[4];
+            FireFox_CheckBox.IsChecked = UserView.Logiciel_Cks[5];
         }
+
+        
     }
 }

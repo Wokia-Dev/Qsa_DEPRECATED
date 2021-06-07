@@ -151,5 +151,8 @@
   <ItemGroup>
     <Resource Include="Images\Logo Logiciel\chrome.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo Logiciel\Firefox.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -66,6 +66,10 @@ namespace Qsa_Wpf.Core
             process.StartInfo.CreateNoWindow = true;
             process.StartInfo.FileName = Path.GetTempPath() + nomFichierCmd;
             process.Start();
+            process.WaitForExit();
+            Thread.Sleep(2000);
+            
+            
         }
 
         public void DeleteFiles(string nomFichier, string nomFichierCmd)
