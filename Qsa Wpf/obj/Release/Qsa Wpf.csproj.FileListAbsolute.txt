@@ -12,3 +12,13 @@ C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf.csproj.GenerateR
 C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf.csproj.CoreCompileInputs.cache
 C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf.exe
 C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf.pdb
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Qsa Wpf.csproj.AssemblyReference.cache
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\Theme\MenuButtonTheme.baml
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\MVVM\View\BureautiqueView.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\MVVM\View\NavigateursView.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\MVVM\View\UserView.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\App.baml
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\MVVM\View\BureautiqueView.baml
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\MVVM\View\NavigateursView.baml
+C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\MVVM\View\UserView.baml

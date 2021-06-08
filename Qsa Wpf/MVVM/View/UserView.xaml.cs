@@ -53,14 +53,11 @@ namespace Qsa_Wpf.MVVM.View
                 "https://stockagewpokia.blob.core.windows.net/qsa/Script%20/FireFoxScript.cmd",
                 "Firefox.msi", "FireFoxScript.cmd");
 
-            //FireFox
-            if (Logiciel_Cks[5])
-            {
-                FireFox_info.DowloadFiles(FireFox_info._nomFichierCmd, FireFox_info._nomFichier,
-                    FireFox_info._url, FireFox_info._cmdUrl);
+            LogicielsInfo Brave_info = new LogicielsInfo("Brave", 6, "https://stockagewpokia.blob.core.windows.net/qsa/Dowload%20FIle/BraveBrowserStandaloneSilentSetup.exe",
+                "https://stockagewpokia.blob.core.windows.net/qsa/Script%20/BraveScript.cmd",
+                "BraveBrowserStandaloneSilentSetup.exe", "BraveScript.cmd");
 
-                FireFox_info.RunScript(FireFox_info._nomFichierCmd, true);
-            }
+            
 
             //Libre Offfice
             if (Logiciel_Cks[0])
@@ -106,20 +103,38 @@ namespace Qsa_Wpf.MVVM.View
 
                 Chrome_info.RunScript(Chrome_info._nomFichierCmd, true);
 
-                MessageBox.Show("Chrome");
+            }
+
+            //FireFox
+            if (Logiciel_Cks[5])
+            {
+                FireFox_info.DowloadFiles(FireFox_info._nomFichierCmd, FireFox_info._nomFichier,
+                    FireFox_info._url, FireFox_info._cmdUrl);
+
+                FireFox_info.RunScript(FireFox_info._nomFichierCmd, true);
+            }
+
+            //Brave
+            if (Logiciel_Cks[6])
+            {
+                Brave_info.DowloadFiles(Brave_info._nomFichierCmd, Brave_info._nomFichier,
+                    Brave_info._url, Brave_info._cmdUrl);
+
+                Brave_info.RunScript(Brave_info._nomFichierCmd, true);
             }
 
             Thread.Sleep(3000);
 
 
-            FireFox_info.DeleteFiles(FireFox_info._nomFichier, FireFox_info._nomFichierCmd);
             LibreOffice_info.DeleteFiles(LibreOffice_info._nomFichier, LibreOffice_info._nomFichierCmd);
             Vlc_info.DeleteFiles(Vlc_info._nomFichier, Vlc_info._nomFichierCmd);
             WinrRar_info.DeleteFiles(WinrRar_info._nomFichier, WinrRar_info._nomFichierCmd);
             Spotify_info.DeleteFiles(Spotify_info._nomFichier, Spotify_info._nomFichierCmd);
             Chrome_info.DeleteFiles(Chrome_info._nomFichier, Chrome_info._nomFichierCmd);
-            
-           
+            FireFox_info.DeleteFiles(FireFox_info._nomFichier, FireFox_info._nomFichierCmd);
+            Brave_info.DeleteFiles(Brave_info._nomFichier, Brave_info._nomFichierCmd);
+
+
 
         }
 

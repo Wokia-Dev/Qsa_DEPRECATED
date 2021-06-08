@@ -154,5 +154,8 @@
   <ItemGroup>
     <Resource Include="Images\Logo Logiciel\Firefox.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo Logiciel\brave.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

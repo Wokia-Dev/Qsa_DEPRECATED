@@ -49,10 +49,23 @@ namespace Qsa_Wpf.MVVM.View
             }
         }
 
+        private void Brave_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if(Brave_CheckBox.IsChecked == true)
+            {
+                UserView.Logiciel_Cks[6] = true;
+            }
+            else
+            {
+                UserView.Logiciel_Cks[6] = false;
+            }
+        }
+
         private void Grid_Initialized(object sender, EventArgs e)
         {
             Chrome_CheckBox.IsChecked = UserView.Logiciel_Cks[4];
             FireFox_CheckBox.IsChecked = UserView.Logiciel_Cks[5];
+            Brave_CheckBox.IsChecked = UserView.Logiciel_Cks[6];
         }
 
         
