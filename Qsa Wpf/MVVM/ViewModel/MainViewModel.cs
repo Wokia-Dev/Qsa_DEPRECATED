@@ -16,11 +16,16 @@ namespace Qsa_Wpf.MVVM.ViewModel
 
         public RelayCommand NavigateueqViewCommand { get; set; }
 
+        public RelayCommand OutilsDevViewCommad { get; set; }
+
+
         public HomeViewModel HomeVM { get; set; }
 
         public BureautiqueViewModel BureautiqueVM { get; set; }
 
         public NavigateursViewModel NavigateursVM { get; set; }
+
+        public OutilsDevViewModel OutilsDevVM { get; set; }
 
 
         private object _currentView;
@@ -40,6 +45,7 @@ namespace Qsa_Wpf.MVVM.ViewModel
             HomeVM = new HomeViewModel();
             BureautiqueVM = new BureautiqueViewModel();
             NavigateursVM = new NavigateursViewModel();
+            OutilsDevVM = new OutilsDevViewModel();
             CurrentView = HomeVM;
 
             HomeViewCommad = new RelayCommand(o =>
@@ -54,6 +60,10 @@ namespace Qsa_Wpf.MVVM.ViewModel
             NavigateueqViewCommand = new RelayCommand(o =>
             {
                 CurrentView = NavigateursVM;
+            });
+            OutilsDevViewCommad = new RelayCommand(o =>
+            {
+                CurrentView = OutilsDevVM;
             });
         }
     }

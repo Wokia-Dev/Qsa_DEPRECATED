@@ -46,3 +46,5 @@ C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\Qsa Wpf.csproj.GenerateResourc
 C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\Qsa Wpf.csproj.CoreCompileInputs.cache
 C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\Qsa Wpf.exe
 C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\Qsa Wpf.pdb
+C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\MVVM\View\OutilsDevView.g.cs
+C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\MVVM\View\OutilsDevView.baml

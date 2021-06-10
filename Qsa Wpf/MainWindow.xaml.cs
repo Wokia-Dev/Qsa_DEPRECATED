@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Security.Principal;
+using System.ComponentModel;
 
 namespace Qsa_Wpf
 {
@@ -30,10 +32,31 @@ namespace Qsa_Wpf
             
         }
 
-        private void RadioButton_Checked()
+        private void Window_Initialized(object sender, EventArgs e)
         {
+            /*
+            bool isAdmin = IsAdministrator();
 
+            if (isAdmin)
+                return;
 
+            else
+            {
+                MessageBox.Show("Lancer l'application en mode administrateur");
+                Application.Current.Shutdown();
+            }*/
         }
+
+
+        public static bool IsAdministrator()
+        {
+            using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
+            {
+                WindowsPrincipal principal = new WindowsPrincipal(identity);
+                return principal.IsInRole(WindowsBuiltInRole.Administrator);
+            }
+        }
+
+
     }
 }

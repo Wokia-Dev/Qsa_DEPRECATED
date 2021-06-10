@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\obj\Release\
+C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Release\
 Qsa_Wpf
 none
 false
 TRACE
-C:\Users\quent\source\repos\Qsa Wpf\Qsa Wpf\App.xaml
-5147505996
+C:\Users\quent\source\repos\Qsa\Qsa Wpf\App.xaml
+61668330282
 
-15-183758098
+17-1369671270
 13-1505183044
-MainWindow.xaml;MVVM\View\BureautiqueView.xaml;MVVM\View\NavigateursView.xaml;MVVM\View\UserView.xaml;Theme\MenuButtonTheme.xaml;
+MainWindow.xaml;MVVM\View\BureautiqueView.xaml;MVVM\View\NavigateursView.xaml;MVVM\View\OutilsDevView.xaml;MVVM\View\UserView.xaml;Theme\MenuButtonTheme.xaml;
 
 False
 

@@ -8,6 +8,7 @@ using System.Net;
 using System.Windows;
 using System.Diagnostics;
 using System.Threading;
+using System.Security.Principal;
 
 namespace Qsa_Wpf.Core
 {
@@ -58,15 +59,15 @@ namespace Qsa_Wpf.Core
 
             Process process = new Process();
             if(RunAdmin)
+            {
                 process.StartInfo.Verb = "runas";
-            else
-                process.StartInfo.Verb = "runasuser";
+                process.StartInfo.UseShellExecute = true;
+                process.StartInfo.CreateNoWindow = true;
+                process.StartInfo.FileName = Path.GetTempPath() + nomFichierCmd;
+                process.Start();
+                process.WaitForExit();
+            }
 
-            process.StartInfo.UseShellExecute = true;
-            process.StartInfo.CreateNoWindow = true;
-            process.StartInfo.FileName = Path.GetTempPath() + nomFichierCmd;
-            process.Start();
-            process.WaitForExit();
             Thread.Sleep(2000);
             
             
@@ -84,4 +85,6 @@ namespace Qsa_Wpf.Core
             }
         }
     }
+
+
 }

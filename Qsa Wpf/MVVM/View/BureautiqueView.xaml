@@ -7,129 +7,214 @@
              mc:Ignorable="d" 
              d:DesignHeight="1000" d:DesignWidth="878"
              >
-    
+
     <Grid Initialized="Grid_Initialized">
 
         <ScrollViewer CanContentScroll="True"
                       HorizontalScrollBarVisibility="Auto"
                       VerticalScrollBarVisibility="Auto">
-        <StackPanel>
-        <!--Libre Office-->
-        <StackPanel Height="110"
+            <StackPanel>
+                <!--Libre Office-->
+                <StackPanel Height="110"
                     Width="200"
                     VerticalAlignment="Top"
                     HorizontalAlignment="Left"
                     Margin="10,0,0,0">
-            <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
+                    <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
 
-                <Border.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#5bc3ff"/>
-                        <GradientStop Color="#3aa0ff"/>
-                    </LinearGradientBrush>
-                </Border.Background>
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
 
-                <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
                           Name="LibreOffice_checkBox" DataContextChanged="LibreOffice_checkBox_DataContextChanged">
-                    <CheckBox.LayoutTransform>
-                        <ScaleTransform ScaleX="2" ScaleY="2" />
-                    </CheckBox.LayoutTransform>
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
 
-                </CheckBox>
-            </Border>
-            <Image Source="/Images/Logo Logiciel/libre office.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="11,-130,0,0"/>
-            <TextBlock Text="Libre Office" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="72,-27,46,0" HorizontalAlignment="Center"/>
-        </StackPanel>
-        
-        <!--Vlc-->
-        <StackPanel Height="110"
+                        </CheckBox>
+                    </Border>
+                    <Image Source="/Images/Logo Logiciel/Bureautique/libre office.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="11,-130,0,0"/>
+                    <TextBlock Text="Libre Office" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="72,-27,46,0" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!--Vlc-->
+                <StackPanel Height="110"
                     Width="200"
                     VerticalAlignment="Top"
                     HorizontalAlignment="Left"
                     Margin="220,-110,0,0"
                     >
-            <Border Height="110" CornerRadius="10">
+                    <Border Height="110" CornerRadius="10">
 
-                <Border.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#5bc3ff"/>
-                        <GradientStop Color="#3aa0ff"/>
-                    </LinearGradientBrush>
-                </Border.Background>
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
                           Name="Vlc_checkBox"
                           DataContextChanged="Vlc_checkBox_DataContextChanged">
-                    <CheckBox.LayoutTransform>
-                        <ScaleTransform ScaleX="2" ScaleY="2" />
-                    </CheckBox.LayoutTransform>
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
 
-                </CheckBox>
+                        </CheckBox>
 
-            </Border>
-            <Image Source="/Images/Logo Logiciel/Vlc.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="0,-130,0,0"/>
-            <TextBlock Text="Vlc" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
-        </StackPanel>
+                    </Border>
+                    <Image Source="/Images/Logo Logiciel/Bureautique/Vlc.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="0,-130,0,0"/>
+                    <TextBlock Text="Vlc" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
+                </StackPanel>
 
-        <!--WinRaR-->
-        <StackPanel Height="110"
+                <!--WinRaR-->
+                <StackPanel Height="110"
                     Width="200"
                     VerticalAlignment="Top"
                     HorizontalAlignment="Left"
                     Margin="430,-110,0,0">
-            <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
-                <Border.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#5bc3ff"/>
-                        <GradientStop Color="#3aa0ff"/>
-                    </LinearGradientBrush>
-                </Border.Background>
+                    <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
                           Name="WinRar_CheckBox"
                           DataContextChanged="WinRar_CheckBox_DataContextChanged"
                           >
-                    <CheckBox.LayoutTransform>
-                        <ScaleTransform ScaleX="2" ScaleY="2" />
-                    </CheckBox.LayoutTransform>
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
 
-                </CheckBox>
+                        </CheckBox>
 
-            </Border>
-            <TextBlock Text="WinRar" FontSize="15" FontFamily="/Fonts/#Poppins" HorizontalAlignment="Center" Margin="20,-27,0,0" Width="67" TextAlignment="Center"/>
-            <Image Source="/Images/Logo Logiciel/WinRar.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="3,-130,0,0"/>
-        </StackPanel>
+                    </Border>
+                    <TextBlock Text="WinRar" FontSize="15" FontFamily="/Fonts/#Poppins" HorizontalAlignment="Center" Margin="20,-27,0,0" Width="67" TextAlignment="Center"/>
+                    <Image Source="/Images/Logo Logiciel/Bureautique/WinRar.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="3,-130,0,0"/>
+                </StackPanel>
 
-        <!--Spotify-->
-        <StackPanel Height="110"
+                <!--Skype-->
+                <StackPanel Height="110"
                     Width="200"
                     VerticalAlignment="Top"
                     HorizontalAlignment="Left"
                     Margin="640,-110,0,0">
-            <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
-                <Border.Background>
-                    <LinearGradientBrush>
-                        <GradientStop Color="#5bc3ff"/>
-                        <GradientStop Color="#3aa0ff"/>
-                    </LinearGradientBrush>
-                </Border.Background>
+                    <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
 
-                <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
-                          Name="Spotify_CheckBox"
-                          DataContextChanged="Spotify_CheckBox_DataContextChanged_1">
-                    <CheckBox.LayoutTransform>
-                        <ScaleTransform ScaleX="2" ScaleY="2" />
-                    </CheckBox.LayoutTransform>
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                                  Name="Skype_CheckBox"
+                                  DataContextChanged="Skype_CheckBox_DataContextChanged">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
 
-                </CheckBox>
-            </Border>
-            <TextBlock Text="Spotify" FontSize="15" FontFamily="/Fonts/#Poppins" HorizontalAlignment="Center" Margin="20,-27,0,0" Width="71" TextAlignment="Center"/>
-            <Image Source="/Images/Logo Logiciel/Spotify.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="3,-130,0,0"/>
-            
-        </StackPanel>
+                        </CheckBox>
+                    </Border>
+                    <TextBlock Text="Skype" FontSize="15" FontFamily="/Fonts/#Poppins" HorizontalAlignment="Center" Margin="20,-27,0,0" Width="71" TextAlignment="Center"/>
+                    <Image Source="/Images/Logo Logiciel/Bureautique/Skype.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="3,-130,0,0"/>
 
-        </StackPanel>
+                </StackPanel>
+
+                <!--qBittorrent-->
+                <StackPanel Height="110"
+                    Width="200"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="10,10,0,0">
+                    <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                          Name="qBittorrent_CheckBox"
+                          DataContextChanged="qBittorrent_CheckBox_DataContextChanged">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
+
+                        </CheckBox>
+                    </Border>
+                    <TextBlock Text="qBittorrent" FontSize="15" FontFamily="/Fonts/#Poppins" HorizontalAlignment="Center" Margin="66,-27,38,0" Width="96" TextAlignment="Center"/>
+                    <Image Source="/Images/Logo Logiciel/Bureautique/qBittorrent.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="3,-130,0,0"/>
+
+                </StackPanel>
+
+                <!--Reader DC-->
+                <StackPanel Height="110"
+                    Width="200"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="220,-110,0,0">
+                    <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                          Name="ReaderDC_CheckBox"
+                          DataContextChanged="ReaderDC_CheckBox_DataContextChanged">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
+
+                        </CheckBox>
+                    </Border>
+                    <TextBlock Text="Reader DC" FontSize="15" FontFamily="/Fonts/#Poppins" HorizontalAlignment="Center" Margin="66,-27,38,0" Width="96" TextAlignment="Center"/>
+                    <Image Source="/Images/Logo Logiciel/Bureautique/ReaderDC.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="3,-130,0,0"/>
+
+                </StackPanel>
+
+                <!--7-Zip-->
+                <StackPanel Height="110"
+                    Width="200"
+                    VerticalAlignment="Top"
+                    HorizontalAlignment="Left"
+                    Margin="430,-110,0,0">
+                    <Border Height="110" Margin="0,0,0,0" CornerRadius="10">
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                          Name="SevenZip_CheckBox"
+                          DataContextChanged="SevenZip_CheckBox_DataContextChanged">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
+
+                        </CheckBox>
+                    </Border>
+                    <TextBlock Text="7-Zip" FontSize="15" FontFamily="/Fonts/#Poppins" HorizontalAlignment="Center" Margin="66,-27,38,0" Width="96" TextAlignment="Center"/>
+                    <Image Source="/Images/Logo Logiciel/Bureautique/7_zip.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="3,-130,0,0"/>
+
+                </StackPanel>
+
+
+            </StackPanel>
         </ScrollViewer>
     </Grid>
 </UserControl>

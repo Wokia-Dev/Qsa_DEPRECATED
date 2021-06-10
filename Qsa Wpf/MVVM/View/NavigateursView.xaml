@@ -12,9 +12,9 @@
         <ScrollViewer HorizontalScrollBarVisibility="Auto"
                       VerticalScrollBarVisibility="Auto"
                       CanContentScroll="True">
-            
+
             <StackPanel>
-                
+
                 <!--Chrome-->
                 <StackPanel Height="110" Width="200"
                     HorizontalAlignment="Left"
@@ -39,7 +39,7 @@
 
                         </CheckBox>
                     </Border>
-                    <Image Source="/Images/Logo Logiciel/chrome.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
+                    <Image Source="/Images/Logo Logiciel/Navigateurs/chrome.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
                     <TextBlock Text="Chrome" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
                 </StackPanel>
 
@@ -67,7 +67,7 @@
 
                         </CheckBox>
                     </Border>
-                    <Image Source="/Images/Logo Logiciel/Firefox.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
+                    <Image Source="/Images/Logo Logiciel/Navigateurs/Firefox.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
                     <TextBlock Text="FireFox" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
                 </StackPanel>
 
@@ -95,8 +95,36 @@
 
                         </CheckBox>
                     </Border>
-                    <Image Source="/Images/Logo Logiciel/brave.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
+                    <Image Source="/Images/Logo Logiciel/Navigateurs/brave.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
                     <TextBlock Text="Brave" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!--Opera-->
+                <StackPanel Height="110" Width="200"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="640,-110,0,0">
+                    <Border Height="110" CornerRadius="10">
+
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                                  Name="Opera_CheckBox"
+                                  DataContextChanged="Opera_CheckBox_DataContextChanged">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
+
+                        </CheckBox>
+                    </Border>
+                    <Image Source="/Images/Logo Logiciel/Navigateurs/opera.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
+                    <TextBlock Text="Opera" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
                 </StackPanel>
 
 
@@ -104,8 +132,6 @@
 
             </StackPanel>
             
-            
-    
         </ScrollViewer>
     </Grid>
 </UserControl>

@@ -23,6 +23,10 @@
                 <view:NavigateursView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:OutilsDevViewModel}">
+                <view:OutilsDevView/>
+            </DataTemplate>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

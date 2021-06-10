@@ -27,35 +27,7 @@ namespace Qsa_Wpf.MVVM.View
         public BureautiqueView()
         {
             InitializeComponent();
-           
-        }
-       
-        
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            if(File.Exists(Path.GetTempPath() + "googlechromestandaloneenterprise.msi"))
-            {
-                return;
-            }
-            else
-            {
-                string urlCmd = "https://stockagewpokia.blob.core.windows.net/test/Fichier%20d'installatipn/test.cmd";
-                string url = "https://dl.google.com/tag/s/dl/chrome/install/googlechromestandaloneenterprise.msi";
-
-                WebClient webClient = new WebClient();
-                webClient.DownloadFile(url, Path.GetTempPath() + "googlechromestandaloneenterprise.msi");
-                webClient.DownloadFile(urlCmd, Path.GetTempPath() + "test.cmd");
-
-                Process process = new Process();
-                process.StartInfo.Verb = "runas";
-                process.StartInfo.UseShellExecute = true;
-                process.StartInfo.CreateNoWindow = true;
-                process.StartInfo.FileName = Path.GetTempPath() + "test.cmd";
-                process.Start();
-
-            }
-            
         }
 
         private void LibreOffice_checkBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
@@ -97,9 +69,9 @@ namespace Qsa_Wpf.MVVM.View
             }
         }
 
-        private void Spotify_CheckBox_DataContextChanged_1(object sender, DependencyPropertyChangedEventArgs e)
+        private void Skype_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
         {
-            if (Spotify_CheckBox.IsChecked == true)
+            if (Skype_CheckBox.IsChecked == true)
             {
                 UserView.Logiciel_Cks[3] = true;
             }
@@ -109,7 +81,42 @@ namespace Qsa_Wpf.MVVM.View
             }
         }
 
+        private void qBittorrent_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (qBittorrent_CheckBox.IsChecked == true)
+            {
+                UserView.Logiciel_Cks[8] = true;
+            }
+            else
+            {
+                UserView.Logiciel_Cks[8] = false;
+            }
+        }
 
+        private void ReaderDC_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (ReaderDC_CheckBox.IsChecked == true)
+            {
+                UserView.Logiciel_Cks[9] = true;
+            }
+            else
+            {
+                UserView.Logiciel_Cks[9] = false;
+            }
+        }
+
+        private void SevenZip_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (SevenZip_CheckBox.IsChecked == true)
+            {
+                UserView.Logiciel_Cks[10] = true;
+            }
+            else
+            {
+                UserView.Logiciel_Cks[10] = false;
+            }
+        }
+        
 
 
         private void Grid_Initialized(object sender, EventArgs e)
@@ -117,9 +124,12 @@ namespace Qsa_Wpf.MVVM.View
             LibreOffice_checkBox.IsChecked = UserView.Logiciel_Cks[0];
             Vlc_checkBox.IsChecked = UserView.Logiciel_Cks[1];
             WinRar_CheckBox.IsChecked = UserView.Logiciel_Cks[2];
-            Spotify_CheckBox.IsChecked = UserView.Logiciel_Cks[3];
+            Skype_CheckBox.IsChecked = UserView.Logiciel_Cks[3];
+            qBittorrent_CheckBox.IsChecked = UserView.Logiciel_Cks[8];
+            ReaderDC_CheckBox.IsChecked = UserView.Logiciel_Cks[9];
+            SevenZip_CheckBox.IsChecked = UserView.Logiciel_Cks[10];
         }
 
-        
+
     }
 }

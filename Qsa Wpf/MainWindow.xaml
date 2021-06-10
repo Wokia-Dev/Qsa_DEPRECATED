@@ -9,7 +9,7 @@
         Title="QSA by Wokia" Height="720" Width="1104" Icon="/Images/W logo.png" 
         WindowStyle="ThreeDBorderWindow"
         ResizeMode="CanResizeWithGrip"
-        Background="Transparent" Closing="Window_Closing"
+        Background="Transparent" Closing="Window_Closing" Initialized="Window_Initialized"
         >
 
     <Window.DataContext>
@@ -55,6 +55,10 @@
                 <RadioButton Content="Navigateurs" Height="50" Foreground="White" FontSize="14" 
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding NavigateueqViewCommand}"/>
+
+                <RadioButton Content="Outils Dev" Height="50" Foreground="White" FontSize="14" 
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding OutilsDevViewCommad}"/>
             </StackPanel>
 
             <ContentControl Grid.Row="1"

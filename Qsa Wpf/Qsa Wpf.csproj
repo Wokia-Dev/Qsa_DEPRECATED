@@ -78,6 +78,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\OutilsDevView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\UserView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -92,11 +96,15 @@
     <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\ViewModel\NavigateursViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\OutilsDevViewModel.cs" />
     <Compile Include="MVVM\View\BureautiqueView.xaml.cs">
       <DependentUpon>BureautiqueView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\NavigateursView.xaml.cs">
       <DependentUpon>NavigateursView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\OutilsDevView.xaml.cs">
+      <DependentUpon>OutilsDevView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\UserView.xaml.cs">
       <DependentUpon>UserView.xaml</DependentUpon>
@@ -137,25 +145,43 @@
     <Resource Include="Images\W logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Logo Logiciel\libre office.png" />
+    <Resource Include="Images\Logo Logiciel\Bureautique\libre office.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Logo Logiciel\Vlc.png" />
+    <Resource Include="Images\Logo Logiciel\Bureautique\Vlc.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Logo Logiciel\WinRar.png" />
+    <Resource Include="Images\Logo Logiciel\Bureautique\WinRar.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Logo Logiciel\Spotify.png" />
+    <Resource Include="Images\Logo Logiciel\Bureautique\Spotify.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Logo Logiciel\chrome.png" />
+    <Resource Include="Images\Logo Logiciel\Navigateurs\chrome.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Logo Logiciel\Firefox.png" />
+    <Resource Include="Images\Logo Logiciel\Navigateurs\Firefox.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Logo Logiciel\brave.png" />
+    <Resource Include="Images\Logo Logiciel\Navigateurs\brave.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo Logiciel\Navigateurs\opera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo Logiciel\Bureautique\qBittorrent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo Logiciel\Bureautique\ReaderDc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo Logiciel\Bureautique\7_zip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo Logiciel\Outils Dev\NotePad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo Logiciel\Bureautique\Skype.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
