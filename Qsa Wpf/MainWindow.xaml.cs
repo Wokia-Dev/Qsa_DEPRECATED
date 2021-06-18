@@ -34,7 +34,7 @@ namespace Qsa_Wpf
 
         private void Window_Initialized(object sender, EventArgs e)
         {
-            /*
+            
             bool isAdmin = IsAdministrator();
 
             if (isAdmin)
@@ -44,7 +44,7 @@ namespace Qsa_Wpf
             {
                 MessageBox.Show("Lancer l'application en mode administrateur");
                 Application.Current.Shutdown();
-            }*/
+            }
         }
 
 

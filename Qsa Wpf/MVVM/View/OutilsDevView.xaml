@@ -12,7 +12,7 @@
                       VerticalScrollBarVisibility="Auto"
                       CanContentScroll="True">
             <StackPanel>
-                
+
                 <!--NotePad-->
                 <StackPanel Height="110" Width="200"
                     HorizontalAlignment="Left"
@@ -40,10 +40,94 @@
                     <Image Source="/Images/Logo Logiciel/Outils Dev/notePad.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
                     <TextBlock Text="NotePad ++ " FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
                 </StackPanel>
-                
+
+                <!--Visual Studio 2019-->
+                <StackPanel Height="110" Width="200"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="220,-110,0,0">
+                    <Border Height="110" CornerRadius="10">
+
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                          Name="VS2019_CheckBox"
+                          DataContextChanged="VS2019_CheckBox_DataContextChanged">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
+
+                        </CheckBox>
+                    </Border>
+                    <Image Source="/Images/Logo Logiciel/Outils Dev/VS2019.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
+                    <TextBlock Text="VS 2019" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!--Android Studio-->
+                <StackPanel Height="110" Width="200"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="430,-110,0,0">
+                    <Border Height="110" CornerRadius="10">
+
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                          Name="AndroidStudio_CheckBox"
+                          DataContextChanged="AndroidStudio_CheckBox_DataContextChanged">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
+
+                        </CheckBox>
+                    </Border>
+                    <Image Source="/Images/Logo Logiciel/Outils Dev/AndroidStudio.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
+                    <TextBlock Text="Android Studio" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!--Visual Studio Code-->
+                <StackPanel Height="110" Width="200"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="640,-110,0,0">
+                    <Border Height="110" CornerRadius="10">
+
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                          Name="VSCode_CheckBox"
+                          DataContextChanged="VSCode_CheckBox_DataContextChanged">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
+
+                        </CheckBox>
+                    </Border>
+                    <Image Source="/Images/Logo Logiciel/Outils Dev/VSCode.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
+                    <TextBlock Text="VS Code" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
+                </StackPanel>
+
             </StackPanel>
-            
+
         </ScrollViewer>
-            
+
     </Grid>
 </UserControl>

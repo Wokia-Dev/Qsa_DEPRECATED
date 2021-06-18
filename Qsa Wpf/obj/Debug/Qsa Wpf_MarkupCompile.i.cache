@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\quent\source\repos\Qsa\Qsa Wpf\App.xaml
-61668330282
+71550060010
 
-182082936659
+20870290754
 13-1505183044
-MainWindow.xaml;MVVM\View\BureautiqueView.xaml;MVVM\View\NavigateursView.xaml;MVVM\View\OutilsDevView.xaml;MVVM\View\UserView.xaml;Theme\MenuButtonTheme.xaml;
+MainWindow.xaml;MVVM\View\AntivirusView.xaml;MVVM\View\BureautiqueView.xaml;MVVM\View\NavigateursView.xaml;MVVM\View\OutilsDevView.xaml;MVVM\View\UserView.xaml;Theme\MenuButtonTheme.xaml;
 
-True
+False
 

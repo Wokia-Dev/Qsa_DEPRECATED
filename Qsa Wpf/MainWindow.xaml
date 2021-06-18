@@ -59,6 +59,10 @@
                 <RadioButton Content="Outils Dev" Height="50" Foreground="White" FontSize="14" 
                              Style="{StaticResource MenuButtonTheme}"
                              Command="{Binding OutilsDevViewCommad}"/>
+                
+                <RadioButton Content="Antivirus" Height="50" Foreground="White" FontSize="14" 
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding AntivirusViewCommad}"/>
             </StackPanel>
 
             <ContentControl Grid.Row="1"

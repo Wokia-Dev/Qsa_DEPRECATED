@@ -38,10 +38,51 @@ namespace Qsa_Wpf.MVVM.View
             }
         }
 
+        private void VS2019_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (VS2019_CheckBox.IsChecked == true)
+            {
+                UserView.Logiciel_Cks[12] = true;
+            }
+            else
+            {
+                UserView.Logiciel_Cks[12] = false;
+            }
+
+        }
+
+        private void AndroidStudio_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (AndroidStudio_CheckBox.IsChecked == true)
+            {
+                UserView.Logiciel_Cks[13] = true;
+            }
+            else
+            {
+                UserView.Logiciel_Cks[13] = false;
+            }
+        }
+
+        private void VSCode_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (VSCode_CheckBox.IsChecked == true)
+            {
+                UserView.Logiciel_Cks[14] = true;
+            }
+            else
+            {
+                UserView.Logiciel_Cks[14] = false;
+            }
+        }
 
         private void Grid_Initialized(object sender, EventArgs e)
         {
             NotePad_CheckBox.IsChecked = UserView.Logiciel_Cks[11];
+            VS2019_CheckBox.IsChecked = UserView.Logiciel_Cks[12];
+            AndroidStudio_CheckBox.IsChecked = UserView.Logiciel_Cks[13];
+            VSCode_CheckBox.IsChecked = UserView.Logiciel_Cks[14];
         }
+
+        
     }
 }
