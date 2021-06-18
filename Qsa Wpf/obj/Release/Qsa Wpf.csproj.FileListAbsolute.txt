@@ -48,3 +48,5 @@ C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Release\Qsa Wpf.csproj.GenerateResou
 C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Release\Qsa Wpf.csproj.CoreCompileInputs.cache
 C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Release\Qsa Wpf.exe
 C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Release\Qsa Wpf.pdb
+C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Release\MVVM\View\AntivirusView.g.cs
+C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Release\MVVM\View\AntivirusView.baml

@@ -50,3 +50,5 @@ C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\MVVM\View\OutilsDevView.g.cs
 C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\MVVM\View\OutilsDevView.baml
 C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\MVVM\View\AntivirusView.g.cs
 C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\MVVM\View\AntivirusView.baml
+C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\Qsa Wpf.exe.manifest
+C:\Users\quent\source\repos\Qsa\Qsa Wpf\obj\Debug\Qsa Wpf.TrustInfo.xml
