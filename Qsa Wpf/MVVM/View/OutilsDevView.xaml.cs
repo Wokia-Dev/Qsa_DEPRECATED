@@ -81,7 +81,10 @@ namespace Qsa_Wpf.MVVM.View
             VS2019_CheckBox.IsChecked = UserView.Logiciel_Cks[12];
             AndroidStudio_CheckBox.IsChecked = UserView.Logiciel_Cks[13];
             VSCode_CheckBox.IsChecked = UserView.Logiciel_Cks[14];
+
         }
+
+       
 
         
     }
