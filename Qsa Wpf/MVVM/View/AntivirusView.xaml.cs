@@ -39,9 +39,24 @@ namespace Qsa_Wpf.MVVM.View
             }
         }
 
+        private void Avast_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (Avast_CheckBox.IsChecked == true)
+            {
+                UserView.Logiciel_Cks[16] = true;
+            }
+            else
+            {
+                UserView.Logiciel_Cks[16] = false;
+            }
+        }
+
         private void Grid_Initialized(object sender, EventArgs e)
         {
             Malwarebytes_CheckBox.IsChecked = UserView.Logiciel_Cks[15];
+            Avast_CheckBox.IsChecked = UserView.Logiciel_Cks[16];
         }
+
+        
     }
 }

@@ -55,6 +55,7 @@ namespace Qsa_Wpf.MVVM.View
             LogicielsInfo SevenZip_info = new LogicielsInfo("7-Zip", 10, "https://stockagewpokia.blob.core.windows.net/qsa/Dowload%20FIle/Bureautique/7z1900-x64.exe",
                 "https://stockagewpokia.blob.core.windows.net/qsa/Script%20/Bureautique/7-ZipScript.cmd",
                 "7z1900-x64.exe", "7-ZipScript.cmd");
+
             #endregion
 
             #region Navigateurs
@@ -97,6 +98,10 @@ namespace Qsa_Wpf.MVVM.View
                 "https://stockagewpokia.blob.core.windows.net/qsa/Script%20/Outils%20Dev/VSCodeScript.cmd",
                 "VSCodeUserSetup-x64-1.57.1.exe", "VSCodeScript.cmd");
 
+            LogicielsInfo FileZilla_info = new LogicielsInfo("FileZilla", 17, "https://stockagewpokia.blob.core.windows.net/qsa/Dowload%20FIle/Outils%20Dev/FileZilla_3.54.1_win64_sponsored-setup.exe",
+                "https://stockagewpokia.blob.core.windows.net/qsa/Script%20/Outils%20Dev/FileZillaScript.cmd",
+                "FileZilla_3.54.1_win64_sponsored-setup.exe", "FileZillaScript.cmd");
+
             #endregion
 
             #region Antivirus
@@ -104,6 +109,10 @@ namespace Qsa_Wpf.MVVM.View
             LogicielsInfo Malwarebytes_info = new LogicielsInfo("Malwarebytes", 15, "https://stockagewpokia.blob.core.windows.net/qsa/Dowload%20FIle/Antivirus/MBSetup.exe",
                 "https://stockagewpokia.blob.core.windows.net/qsa/Script%20/Antivirus/MalwarebytesScript.cmd",
                 "MBSetup.exe", "MalwarebytesScript.cmd");
+
+            LogicielsInfo Avast_info = new LogicielsInfo("Avast", 16, "https://stockagewpokia.blob.core.windows.net/qsa/Dowload%20FIle/Antivirus/avast_free_antivirus_setup_online.exe",
+                "https://stockagewpokia.blob.core.windows.net/qsa/Script%20/Antivirus/AvastScript.cmd",
+                "avast_free_antivirus_setup_online.exe", "AvastScript.cmd");
 
             #endregion
 
@@ -256,6 +265,24 @@ namespace Qsa_Wpf.MVVM.View
                 Malwarebytes_info.RunScript(Malwarebytes_info._nomFichierCmd, true);
             }
 
+            //Avast
+            if (Logiciel_Cks[16])
+            {
+                Avast_info.DowloadFiles(Avast_info._nomFichierCmd, Avast_info._nomFichier,
+                    Avast_info._url, Avast_info._cmdUrl);
+
+                Avast_info.RunScript(Avast_info._nomFichierCmd, true);
+            }
+
+            //FileZilla
+            if (Logiciel_Cks[17])
+            {
+                FileZilla_info.DowloadFiles(FileZilla_info._nomFichierCmd, FileZilla_info._nomFichier,
+                    FileZilla_info._url, FileZilla_info._cmdUrl);
+
+                FileZilla_info.RunScript(FileZilla_info._nomFichierCmd, true);
+            }
+
             #endregion
 
             Thread.Sleep(1000);
@@ -289,12 +316,14 @@ namespace Qsa_Wpf.MVVM.View
             VS2019_info.DeleteFiles(VS2019_info._nomFichier, VS2019_info._nomFichierCmd);
             AndroidStudio_info.DeleteFiles(AndroidStudio_info._nomFichier, AndroidStudio_info._nomFichierCmd);
             VSCode_info.DeleteFiles(VSCode_info._nomFichier, VSCode_info._nomFichierCmd);
+            FileZilla_info.DeleteFiles(FileZilla_info._nomFichier, FileZilla_info._nomFichierCmd);
 
             #endregion
 
             #region Antivirus
 
             Malwarebytes_info.DeleteFiles(Malwarebytes_info._nomFichier, Malwarebytes_info._nomFichierCmd);
+            Avast_info.DeleteFiles(Avast_info._nomFichier, Avast_info._nomFichier);
 
             #endregion
 

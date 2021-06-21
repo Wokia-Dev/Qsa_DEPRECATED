@@ -12,7 +12,7 @@
                       CanContentScroll="True">
             <StackPanel>
 
-                <!--NotePad-->
+                <!--Malwarebytes-->
                 <StackPanel Height="110" Width="200"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Top"
@@ -38,6 +38,34 @@
                     </Border>
                     <Image Source="/Images/Logo Logiciel/Antivirus/Malwarebytes.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
                     <TextBlock Text="Malwarebytes" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <!--Avast-->
+                <StackPanel Height="110" Width="200"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="220,-110,0,0">
+                    <Border Height="110" CornerRadius="10">
+
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                          Name="Avast_CheckBox"
+                          DataContextChanged="Avast_CheckBox_DataContextChanged">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
+
+                        </CheckBox>
+                    </Border>
+                    <Image Source="/Images/Logo Logiciel/Antivirus/Avast.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
+                    <TextBlock Text="Avast" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
                 </StackPanel>
 
 

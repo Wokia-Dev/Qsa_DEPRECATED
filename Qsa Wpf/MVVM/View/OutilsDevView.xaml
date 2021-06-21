@@ -125,6 +125,34 @@
                     <TextBlock Text="VS Code" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
                 </StackPanel>
 
+                <!--FileZilla-->
+                <StackPanel Height="110" Width="200"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="10,10,0,0">
+                    <Border Height="110" CornerRadius="10">
+
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff"/>
+                                <GradientStop Color="#3aa0ff"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+
+                        <CheckBox VerticalAlignment="Center" Margin="0,0,5,0" Width="15" HorizontalAlignment="Right" RenderTransformOrigin="0.5,0.5" Height="15"
+                          Name="FileZilla_CheckBox"
+                          DataContextChanged="FileZilla_CheckBox_DataContextChanged">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
+
+                        </CheckBox>
+                    </Border>
+                    <Image Source="/Images/Logo Logiciel/Outils Dev/FileZilla.png" Height="74" Width="75" HorizontalAlignment="Left" Margin="5,-130,0,0"/>
+                    <TextBlock Text="FileZilla" FontSize="15" FontFamily="/Fonts/#Poppins" Margin="20,-27,0,0" HorizontalAlignment="Center"/>
+                </StackPanel>
+
             </StackPanel>
 
         </ScrollViewer>

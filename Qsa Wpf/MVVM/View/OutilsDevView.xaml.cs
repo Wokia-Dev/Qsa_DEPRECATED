@@ -75,16 +75,27 @@ namespace Qsa_Wpf.MVVM.View
             }
         }
 
+        private void FileZilla_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (FileZilla_CheckBox.IsChecked == true)
+            {
+                UserView.Logiciel_Cks[17] = true;
+            }
+            else
+            {
+                UserView.Logiciel_Cks[17] = false;
+            }
+        }
+
         private void Grid_Initialized(object sender, EventArgs e)
         {
             NotePad_CheckBox.IsChecked = UserView.Logiciel_Cks[11];
             VS2019_CheckBox.IsChecked = UserView.Logiciel_Cks[12];
             AndroidStudio_CheckBox.IsChecked = UserView.Logiciel_Cks[13];
             VSCode_CheckBox.IsChecked = UserView.Logiciel_Cks[14];
+            FileZilla_CheckBox.IsChecked = UserView.Logiciel_Cks[17];
 
         }
-
-       
 
         
     }

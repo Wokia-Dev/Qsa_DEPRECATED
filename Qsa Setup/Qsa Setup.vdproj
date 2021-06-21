@@ -28,13 +28,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9E71AC571678FFCE0631D8A6260BA0F4"
+        "OwnerKey" = "8:_BE19BA722A8B4498BC8B5E7763DCFA9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BE19BA722A8B4498BC8B5E7763DCFA9A"
+        "OwnerKey" = "8:_9E71AC571678FFCE0631D8A6260BA0F4"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -55,6 +55,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -71,6 +79,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -751,7 +767,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_BE19BA722A8B4498BC8B5E7763DCFA9A"
             {
-            "SourcePath" = "8:..\\Qsa Wpf\\obj\\Release\\Qsa Wpf.exe"
+            "SourcePath" = "8:..\\Qsa Wpf\\obj\\Debug\\Qsa Wpf.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_87AB95CADF6F42FDA7EEDFB651C01B9F"
