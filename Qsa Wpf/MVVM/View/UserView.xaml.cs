@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -55,6 +56,10 @@ namespace Qsa_Wpf.MVVM.View
             LogicielsInfo SevenZip_info = new LogicielsInfo("7-Zip", 10, "https://stockagewpokia.blob.core.windows.net/qsa/Dowload%20FIle/Bureautique/7z1900-x64.exe",
                 "https://stockagewpokia.blob.core.windows.net/qsa/Script%20/Bureautique/7-ZipScript.cmd",
                 "7z1900-x64.exe", "7-ZipScript.cmd");
+
+            LogicielsInfo AnyDesk_info = new LogicielsInfo("AnyDesk", 18, "https://stockagewpokia.blob.core.windows.net/qsa/Dowload%20FIle/Bureautique/AnyDesk.msi",
+                "https://stockagewpokia.blob.core.windows.net/qsa/Script%20/Bureautique/AnyDeskScript.cmd",
+                "AnyDesk.msi", "AnyDeskScript.cmd");
 
             #endregion
 
@@ -116,6 +121,13 @@ namespace Qsa_Wpf.MVVM.View
 
             #endregion
 
+            #region Drivers
+
+            LogicielsInfo IntelDrivers_info = new LogicielsInfo("Intel Driver", 19, "https://stockagewpokia.blob.core.windows.net/qsa/Dowload%20FIle/Drivers/IntelDriver.exe",
+                "https://stockagewpokia.blob.core.windows.net/qsa/Script%20/Drivers/IntelDriverScript.cmd",
+                "IntelDriver.exe", "IntelDriverScript.cmd");
+
+            #endregion
 
             #endregion
 
@@ -283,6 +295,24 @@ namespace Qsa_Wpf.MVVM.View
                 FileZilla_info.RunScript(FileZilla_info._nomFichierCmd, true);
             }
 
+            //AnyDesk
+            if (Logiciel_Cks[18])
+            {
+                AnyDesk_info.DowloadFiles(AnyDesk_info._nomFichierCmd, AnyDesk_info._nomFichier,
+                    AnyDesk_info._url, AnyDesk_info._cmdUrl);
+
+                AnyDesk_info.RunScript(AnyDesk_info._nomFichierCmd, true);
+            }
+
+            //Intel Driver
+            if (Logiciel_Cks[19])
+            {
+                IntelDrivers_info.DowloadFiles(IntelDrivers_info._nomFichierCmd, IntelDrivers_info._nomFichier,
+                    IntelDrivers_info._url, IntelDrivers_info._cmdUrl);
+
+                IntelDrivers_info.RunScript(IntelDrivers_info._nomFichierCmd, true);
+            }
+
             #endregion
 
             Thread.Sleep(1000);
@@ -298,6 +328,7 @@ namespace Qsa_Wpf.MVVM.View
             qBittorrent_info.DeleteFiles(qBittorrent_info._nomFichier, qBittorrent_info._nomFichierCmd);
             ReaderDC_info.DeleteFiles(ReaderDC_info._nomFichier, ReaderDC_info._nomFichierCmd);
             SevenZip_info.DeleteFiles(SevenZip_info._nomFichier, SevenZip_info._nomFichierCmd);
+            AnyDesk_info.DeleteFiles(AnyDesk_info._nomFichier, AnyDesk_info._nomFichierCmd);
 
             #endregion
 
@@ -327,6 +358,12 @@ namespace Qsa_Wpf.MVVM.View
 
             #endregion
 
+            #region Drivers
+
+            IntelDrivers_info.DeleteFiles(IntelDrivers_info._nomFichier, IntelDrivers_info._nomFichierCmd);
+
+            #endregion
+
 
             Thread.Sleep(3000);
 
@@ -345,6 +382,12 @@ namespace Qsa_Wpf.MVVM.View
         private void Grid_Loaded(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)
+        {
+            Process.Start(new ProcessStartInfo(e.Uri.AbsoluteUri));
+            e.Handled = true;
         }
     }
 }

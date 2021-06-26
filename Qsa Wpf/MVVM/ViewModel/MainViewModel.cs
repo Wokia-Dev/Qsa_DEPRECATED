@@ -20,6 +20,8 @@ namespace Qsa_Wpf.MVVM.ViewModel
 
         public RelayCommand AntivirusViewCommad { get; set; }
 
+        public RelayCommand DriversViewCommad { get; set; }
+
 
         public HomeViewModel HomeVM { get; set; }
 
@@ -30,6 +32,8 @@ namespace Qsa_Wpf.MVVM.ViewModel
         public OutilsDevViewModel OutilsDevVM { get; set; }
 
         public AntivirusViewModel AntivirusVM { get; set; }
+
+        public DriversViewModel DriversVM { get; set; }
 
 
         private object _currentView;
@@ -51,6 +55,7 @@ namespace Qsa_Wpf.MVVM.ViewModel
             NavigateursVM = new NavigateursViewModel();
             OutilsDevVM = new OutilsDevViewModel();
             AntivirusVM = new AntivirusViewModel();
+            DriversVM = new DriversViewModel();
             CurrentView = HomeVM;
 
             HomeViewCommad = new RelayCommand(o =>
@@ -73,6 +78,11 @@ namespace Qsa_Wpf.MVVM.ViewModel
             AntivirusViewCommad = new RelayCommand(o =>
             {
                 CurrentView = AntivirusVM;
+            });
+
+            DriversViewCommad = new RelayCommand(o =>
+            {
+                CurrentView = DriversVM;
             });
         }
     }

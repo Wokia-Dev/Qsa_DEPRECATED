@@ -112,6 +112,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MVVM\View\DriversView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MVVM\View\NavigateursView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -132,6 +136,7 @@
   <ItemGroup>
     <Compile Include="MVVM\ViewModel\AntivirusViewModel.cs" />
     <Compile Include="MVVM\ViewModel\BureautiqueViewModel.cs" />
+    <Compile Include="MVVM\ViewModel\DriversViewModel.cs" />
     <Compile Include="MVVM\ViewModel\HomeViewModel.cs" />
     <Compile Include="MVVM\ViewModel\MainViewModel.cs" />
     <Compile Include="MVVM\ViewModel\NavigateursViewModel.cs" />
@@ -141,6 +146,9 @@
     </Compile>
     <Compile Include="MVVM\View\BureautiqueView.xaml.cs">
       <DependentUpon>BureautiqueView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MVVM\View\DriversView.xaml.cs">
+      <DependentUpon>DriversView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MVVM\View\NavigateursView.xaml.cs">
       <DependentUpon>NavigateursView.xaml</DependentUpon>
@@ -256,6 +264,12 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\Logo Logiciel\Outils Dev\FileZilla.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo Logiciel\Bureautique\AnyDesk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Logo Logiciel\Drivers\IntelDrivers.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

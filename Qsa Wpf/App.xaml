@@ -1,34 +1,39 @@
-﻿<Application x:Class="Qsa_Wpf.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:Qsa_Wpf"
-             xmlns:viewModel="clr-namespace:Qsa_Wpf.MVVM.ViewModel"
-             xmlns:view="clr-namespace:Qsa_Wpf.MVVM.View"
-             StartupUri="MainWindow.xaml">
+﻿<Application
+    x:Class="Qsa_Wpf.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Qsa_Wpf"
+    xmlns:view="clr-namespace:Qsa_Wpf.MVVM.View"
+    xmlns:viewModel="clr-namespace:Qsa_Wpf.MVVM.ViewModel"
+    StartupUri="MainWindow.xaml">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Theme/MenuButtonTheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
             <DataTemplate DataType="{x:Type viewModel:HomeViewModel}">
-                <view:UserView></view:UserView>
+                <view:UserView />
             </DataTemplate>
-            
+
             <DataTemplate DataType="{x:Type viewModel:BureautiqueViewModel}">
-                <view:BureautiqueView/>
+                <view:BureautiqueView />
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type viewModel:NavigateursViewModel}">
-                <view:NavigateursView/>
+                <view:NavigateursView />
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type viewModel:OutilsDevViewModel}">
-                <view:OutilsDevView/>
+                <view:OutilsDevView />
             </DataTemplate>
 
             <DataTemplate DataType="{x:Type viewModel:AntivirusViewModel}">
-                <view:AntivirusView/>
+                <view:AntivirusView />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:DriversViewModel}">
+                <view:DriversView />
             </DataTemplate>
 
         </ResourceDictionary>

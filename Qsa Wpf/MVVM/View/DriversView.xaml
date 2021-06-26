@@ -1,0 +1,71 @@
+﻿<UserControl
+    x:Class="Qsa_Wpf.MVVM.View.DriversView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Qsa_Wpf.MVVM.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="1000"
+    d:DesignWidth="878"
+    mc:Ignorable="d">
+
+    <Grid Initialized="Grid_Initialized">
+
+        <ScrollViewer
+            CanContentScroll="True"
+            HorizontalScrollBarVisibility="Auto"
+            VerticalScrollBarVisibility="Auto">
+
+            <StackPanel>
+
+                <!--  Drivers  -->
+                <StackPanel
+                    Width="200"
+                    Height="110"
+                    Margin="10,0,0,0"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top">
+                    <Border Height="110" CornerRadius="10">
+
+                        <Border.Background>
+                            <LinearGradientBrush>
+                                <GradientStop Color="#5bc3ff" />
+                                <GradientStop Color="#3aa0ff" />
+                            </LinearGradientBrush>
+                        </Border.Background>
+
+
+                        <CheckBox
+                            Name="IntelDrivers_CheckBox"
+                            Width="15"
+                            Height="15"
+                            Margin="0,0,5,0"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            DataContextChanged="IntelDrivers_CheckBox_DataContextChanged"
+                            RenderTransformOrigin="0.5,0.5">
+                            <CheckBox.LayoutTransform>
+                                <ScaleTransform ScaleX="2" ScaleY="2" />
+                            </CheckBox.LayoutTransform>
+
+                        </CheckBox>
+                    </Border>
+                    <Image
+                        Width="75"
+                        Height="74"
+                        Margin="5,-130,0,0"
+                        HorizontalAlignment="Left"
+                        Source="/Images/Logo Logiciel/Drivers/IntelDrivers.png" />
+                    <TextBlock
+                        Margin="20,-27,0,0"
+                        HorizontalAlignment="Center"
+                        FontFamily="/Fonts/#Poppins"
+                        FontSize="15"
+                        Text="Intel Drivers" />
+                </StackPanel>
+
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

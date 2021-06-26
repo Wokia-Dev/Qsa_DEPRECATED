@@ -116,7 +116,18 @@ namespace Qsa_Wpf.MVVM.View
                 UserView.Logiciel_Cks[10] = false;
             }
         }
-        
+
+        private void AnyDesk_CheckBox_DataContextChanged(object sender, DependencyPropertyChangedEventArgs e)
+        {
+            if (AnyDesk_CheckBox.IsChecked == true)
+            {
+                UserView.Logiciel_Cks[18] = true;
+            }
+            else
+            {
+                UserView.Logiciel_Cks[18] = false;
+            }
+        }
 
 
         private void Grid_Initialized(object sender, EventArgs e)
@@ -128,8 +139,9 @@ namespace Qsa_Wpf.MVVM.View
             qBittorrent_CheckBox.IsChecked = UserView.Logiciel_Cks[8];
             ReaderDC_CheckBox.IsChecked = UserView.Logiciel_Cks[9];
             SevenZip_CheckBox.IsChecked = UserView.Logiciel_Cks[10];
+            AnyDesk_CheckBox.IsChecked = UserView.Logiciel_Cks[18];
         }
 
-
+        
     }
 }
